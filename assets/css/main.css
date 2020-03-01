@@ -61,3 +61,7 @@ button{
 button:hover{
     background: rgba(10, 143, 167, 0.897);
 }
+.error{
+    color: red;
+    display: none;
+}
