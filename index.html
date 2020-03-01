@@ -13,25 +13,29 @@
         </header>
         <main>
             
-            <form action="">
+            <form action="#" id="addIssue" name="addIssue" onsubmit="return validateForm();  " method="POST">
                 
                 <fieldset>
                     <legend>Add New Issue</legend>
                     <p> Description :  <br>
                         <input type="text" placeholder="description" name="description" id="description">
+                        
                     </p>
+                    <span class="error" id="descError">*Description is required!*</span>
                     <p> Severity : <br>
                         <select name="severity" id="seerity">
                             <option value="low">low</option>
-                            <option value="medium">low</option>
+                            <option value="medium">medium</option>
                             <option value="high">high</option>
                         </select>
                     </p>
+                    <span class="error" id="severityError">*severity is required!*</span>
                     <p> Assigned To: <br>
-                        <input type="text" placeholder="Assigned to" name="assingedto" id="assignedto">
+                        <input type="text" placeholder="Assigned to" name="assingedTo" id="assignedTo">
                     </p>
+                    <span class="error" id="assignedToError">*Assigned to is required!*</span>
                     <p>
-                        <button type="submit" name="submit" id="submit">Add</button>
+                        <button type="submit" name="submit" id="submit" onclick="preventLoading();">Add</button>
                     </p>
 
                 </fieldset>
@@ -39,5 +43,6 @@
             </form>
         </main>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
