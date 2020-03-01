@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Issue Tracker</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <div class="container">
@@ -17,20 +18,20 @@
                 <fieldset>
                     <legend>Add New Issue</legend>
                     <p> Description :  <br>
-                        <input type="text" placeholder="description">
+                        <input type="text" placeholder="description" name="description" id="description">
                     </p>
                     <p> Severity : <br>
-                        <select name="" id="">
+                        <select name="severity" id="seerity">
                             <option value="low">low</option>
                             <option value="medium">low</option>
                             <option value="high">high</option>
                         </select>
                     </p>
                     <p> Assigned To: <br>
-                        <input type="text">
+                        <input type="text" placeholder="Assigned to" name="assingedto" id="assignedto">
                     </p>
                     <p>
-                        <button type="submit">Add</button>
+                        <button type="submit" name="submit" id="submit">Add</button>
                     </p>
 
                 </fieldset>
